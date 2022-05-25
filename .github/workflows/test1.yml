@@ -1,0 +1,20 @@
+name: first github action
+on : 
+  push:
+    branches: [*]
+  workflow_dispatch:
+jobs:
+  newjob:
+    runs-on: ubuntu-latest
+
+    steps:
+      -uses: actions/checkout@v3
+      # checking out github repository
+     
+      -run: echo "hello world"
+      # single line script
+
+      -run: |
+            echo "script1"
+            echo "script2"
+      # multi line script      
