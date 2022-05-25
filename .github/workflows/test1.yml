@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       # checking out github repository
      
-      -run: echo "hello world"
+      - run: echo "hello world"
       # single line script
 
-      -run: |
+      - run: |
             echo "script1"
             echo "script2"
       # multi line script      
