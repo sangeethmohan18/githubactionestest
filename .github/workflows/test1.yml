@@ -1,19 +1,19 @@
 name: first github action
 on : 
   push:
-    branches: [*]
+    branches: [main]
   workflow_dispatch:
 jobs:
   newjob:
     runs-on: self-hosted
 
     steps:
-      -uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       # checking out github repository
      
-      -run: echo "hello world"
+      - run: echo "hello world"
       # single line script
 
-      -run: |
+      - run: |
             echo "script1"
             echo "script2"
