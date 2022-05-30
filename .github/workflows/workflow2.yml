@@ -1,0 +1,24 @@
+name: first github action
+on : 
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+  # can also manually triggered from github 
+jobs:
+  newjob:
+    runs-on: self-hosted
+
+    # this job will run on runner configured by ourself
+
+    steps:
+      - uses: actions/checkout@v3
+      # checking out github repository
+     
+      - run: echo "hello world"
+      # single line script
+
+      - run: |
+            echo "script1"
+            echo "script2"
+      # multi line scripts
