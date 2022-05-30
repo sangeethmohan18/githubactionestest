@@ -12,7 +12,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.8","3.9","3.10"]
+        python-version: ["3.8","3.9","3.6"]
+        
+        # strategy matrix can be used to run multiple jobs based on the matrix
 
     steps:
 
